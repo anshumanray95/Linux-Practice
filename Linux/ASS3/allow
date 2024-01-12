@@ -1,0 +1,10 @@
+echo "Enter internal mark"
+read im
+echo "Enter percentage in attendance"
+read att
+if [ $im -ge 20 -a $att -ge 75 ]
+then
+echo "Allowed for the semester"
+else
+echo "Not allowed"
+fi

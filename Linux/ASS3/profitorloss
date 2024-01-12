@@ -1,0 +1,18 @@
+echo "Enter cost price"
+read c
+echo "Enter selling price"
+read p
+if [ $c -gt $p ]
+then
+echo "The seller has made a loss"
+l=`expr $c - $p`
+echo "The loss incurred is $l"
+elif [ $p -gt $c ]
+then
+echo "The seller made a profit"
+pr=`expr $p - $c`
+echo "The profit made is $pr"
+else
+echo "No profit or no loss was made"
+fi
+

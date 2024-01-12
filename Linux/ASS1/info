@@ -1,0 +1,85 @@
+student@iter-ThinkCentre-M72e:~$ ls
+a.out    Documents  editor.sql  Music     Public  Templates
+Desktop  Downloads  Images      Pictures  snap    Videos
+student@iter-ThinkCentre-M72e:~$ cd Documents
+student@iter-ThinkCentre-M72e:~/Documents$ cd 2141018079
+student@iter-ThinkCentre-M72e:~/Documents/2141018079$ cd 2141018079_DOS
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ who
+student  tty2         2023-09-22 07:56 (tty2)
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ whoami
+student
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ date
+Friday 22 September 2023 10:36:33 AM IST
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ cal
+Command 'cal' not found, but can be installed with:
+apt install ncal
+Please ask your administrator.
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ mkdir dos
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ rmdir dos
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ cat > file1
+ 
+name    
+roll
+reg
+addr^Z
+[1]+  Stopped                 cat > file1
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ cat file file1 > file3
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ cp file file1
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ mv file file3
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ head file
+head: cannot open 'file' for reading: No such file or directory
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ head file3
+name:Anshuman Ray
+sec :F006
+sn  :40
+reg :2141018079
+addr:BBSR
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ head -n -2
+^Z
+[2]+  Stopped                 head -n -2
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ head -n -2file3
+head: invalid number of lines: ‘2file3’
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ head -n -2 file3
+name:Anshuman Ray
+sec :F006
+sn  :40
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ tail -n -1 file3
+addr:BBSR
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ cat > file3
+^Z
+[3]+  Stopped                 cat > file3
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ head file3
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ head file
+head: cannot open 'file' for reading: No such file or directory
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ head file1
+name:Anshuman
+sec :F
+sn  :40
+reg :2141018079
+addr:BBSR
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ cat file1 | tr a-z A-Z > output
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ head file1
+name:Anshuman
+sec :F
+sn  :40
+reg :2141018079
+addr:BBSR
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ sort file1
+addr:BBSR
+name:Anshuman
+reg :2141018079
+sec :F
+sn  :40
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ cp output file1
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ head file1
+NAME:ANSHUMAN
+SEC :F
+SN  :40
+REG :2141018079
+ADDR:BBSR
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ wc file1
+ 5  8 55 file1
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ ls -1|wc -l
+3
+student@iter-ThinkCentre-M72e:~/Documents/2141018079/2141018079_DOS$ 
+
